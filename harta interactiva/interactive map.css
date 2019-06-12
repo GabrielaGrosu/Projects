@@ -1,0 +1,76 @@
+body,
+		html {
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		.map_image {
+			width: 70%;
+			float: left;
+		}
+
+		.map_image path {
+			fill: lightblue;
+			stroke: white;
+			stroke-width: 1px;
+			transition: fill 0.3s;
+		}
+
+		.map_image path:hover {
+			fill: blue;
+			stroke: white;
+			stroke-width: 1px;
+			transition: fill 0.3s;
+		}
+
+		.countryColor.visible {
+			fill: blue;
+			stroke: white;
+			stroke-width: 1px;
+			transition: fill 0.3s;
+		}
+
+		.countryColor.invisible {
+			fill: lightblue;
+			stroke: white;
+			stroke-width: 1px;
+			transition: fill 0.3s;
+		}
+
+		.map_list {
+			width: 30%;
+			float: right;
+		}
+
+		.countries_list {
+			list-style-type: square;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f1f1f1;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: black;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.show {
+			display: block;
+		}
