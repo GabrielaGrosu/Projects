@@ -33,10 +33,6 @@ function deseneazaCos() {
 	let s = 0;
 	var index = -1;	
 	for (var i in cos) {
-		/*if (cos[i] = null) {
-			continue;
-		}*/
-
 		if (cos.hasOwnProperty()) {
 			continue;
 		}
@@ -102,15 +98,7 @@ function add(id, nr) {
 	} else {
 		modifica(id);
 	}
-
 }
-/* function substract(id){
-let str = 0;
-if (cos[id].cantitate>0){
-cos[id].cantitate--;
-modifica(id);
-}
-}*/
 function modifica(id) {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function () {
