@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+    <head>
+        <link rel="stylesheet" type="text/css" href="owl.carousel.min.css">
+        <link rel="stylesheet" type="text/css" href="owl.theme.default.min.css">
+        <link rel="stylesheet" type="text/css" href="magazinOnline.css">
+        <link rel="stylesheet" type="text/css" href="magazinOnline detalii.css">
+        <script src="magazinOnline detalii.js"></script>
+    </head>
+
+    <body onload="getLista(); getCos()">
+        <div>
+            <div id="snackbar">
+                <span id="numeSnackbar">lista.nume</span>
+                <span>a fost adaugat in cos</span>
+            </div>
+            <div id="header_style">
+                <h1 id="titlu">
+                    <a href="magazinOnline.html" id="link_titlu">Kitchen stuff</a>
+                </h1>
+                <span>
+                    <button class="cos">
+                        <img src="cos.svg" class="src_style" />
+                        <a href="magazinOnline cart.html">Cos cumparaturi</a>
+                    </button>
+                </span>
+            </div>
+            <div style="clear: both;"></div>
+            <div id="loading_gif">
+                <img src="loading.gif" id="loading" />
+            </div>
+            <div class="spatiere">
+                <div class="col-sm-12 col-md-6 col-lg-6" id="imagine">
+                    <img width="450" src="lista.imagine" id="poza">
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-6" id="informatii_produs">
+                    <h4 id="nume">lista.nume</h4>
+                    <span id="detalii">lista.detalii</span><br />
+                    <h4 id="pret">lista.pret </h4>
+                    <h4 id="lei"> lei</h4>
+                    <br />
+                    <p><span>In stoc:</span>
+                        <span id="stoc">lista.stoc</span>
+                        <span> produse</span>
+                    </p>
+                    <form onsubmit="adaugareCos(this,event)">
+                        <label>Cantitate</label>
+                        <input name="cantitate" type="number" min="1" id="cantitate"></br>
+                        <input type="submit" value="Adauga in cos" class="buton_adaugare">
+                    </form>
+                    <div id="stocInsuficient"></div>
+                </div>
+                <div style="clear: both;"></div>
+            </div>
+            <div id="recomandate">
+                <h3>Produse recomandate</h3>
+            </div>
+            <div class="owl-carousel owl-theme">
+                <div class="item">
+                    <img src="tacamuri.jpg" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="razatoare.jpg" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="tocator.jpg" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="perie.jpg" class="img-fluid">
+                </div>
+                <div class="item">
+                    <img src="spatule.jpg" class="img-fluid">
+                </div>
+
+            </div>
+        </div>
+        <script type="text/javascript" src="jquery.min.js"></script>
+        <script type="text/javascript" src="owl.carousel.min.js"></script>
+        <script type="text/javascript">
+            $('.owl-carousel').owlCarousel({
+                items: 3,
+                margin: 30,
+                autoplay: true,
+                dots: true,
+                dotsEach: 3,
+                responsiveClass: true,
+                navText: ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x black"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>',
+                    '<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+                responsive: {
+                    0: {
+                        items: 1,
+                        nav: true
+                    },
+                    600: {
+                        items: 2,
+                        nav: false
+                    },
+                    1000: {
+                        items: 3,
+                        nav: true,
+                        loop: false
+                    }
+                }
+            })
+        </script>
+
+    </body>
+
+</html>

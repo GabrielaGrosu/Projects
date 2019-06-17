@@ -1,0 +1,144 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #bfc7c3;
+    background-image: url("fresh-snow.png");
+}
+
+#titlu {
+    display: inline;
+    color: #209124;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #a5bba6 3px 2px 0;
+    position: relative;
+    vertical-align: top;
+}
+
+#link_titlu {
+    color: #209124;
+}
+
+#header_style {
+    margin: 20px auto 30px auto;
+    width: 80%;
+}
+
+.cos {
+    float: right;
+    order: 1;
+    display: inline-block;
+    border: 1.5px solid #209124;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cos:hover{
+    background-color: #509753;
+}
+
+.src_style {
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_tabel {
+    font-weight: bold;
+}
+
+.style_tabel {
+    float: left;
+    display: inline;
+    text-align: left;
+    margin-left: 10px;
+    border-spacing: 0;
+    border-collapse: collapse;
+
+}
+
+
+.coloana_total {
+    float: right;
+    display: inline;
+    margin-right: 20px;
+    text-align: left;
+}
+
+.coloana_total.invisible {
+    display: none;
+}
+
+#loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+}
+
+.continut {
+    display: none;
+}
+
+.continut.visible {
+    border: 1.5px solid white;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    font-family: 'Roboto', sans-serif;
+}
+
+.buton_continut {
+    padding: 3px 10px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.buton_continut_add {
+    padding: 3px 8px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.nume_rand {
+    width: 300px;
+}
+
+.cantitate {
+    width: 100px;
+}
+
+
+#loading_gif {
+    text-align: center;
+}
+
+#loading {
+    width: 10%;
+}
+
+#loading.invisible {
+    display: none;
+}
+
+table tr:nth-child(even) {
+    background-color: #c7cfc8;
+    border-spacing: none;
+
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="weather.css">
+        <script src="weather.js"></script>
+    </head>
+    <body>
+        <div id="container">
+            <input type="text" id="oras">
+            <button class="vremea_buton" onclick="afiseazaVremea()">Afiseaza vremea</button>
+            <button class="prognoza_buton" onclick="afiseazaPrognoza()">Afiseaza prognoza</button>
+        </div>
+        <div id="vremea">
+            <h3>Vremea acum</h3>
+            <hr>
+            <div id="date">
+                <img id="icon"></br>
+                Descriere:<span id="descriere"></span></br>
+                Umiditate:<span id="umiditate"></span></br>
+                Presiune:<span id="presiune"></span></br>
+                Temperatura curenta:<span id="temp"></span></br>
+                Minima zile:<span id="min"></span></br>
+                Maxima zilei:<span id="max"></span></br>
+            </div>
+            <div id="harta">
+                <iframe id="coordonateHarta" width="700" height="250" frameborder="0" style="border:0">
+                </iframe>
+            </div>
+        </div>
+        
+        <div id="prognoza">
+            <h3>Vremea in urmatoarele zile</h3>
+            <hr>
+            <div id="date_prognoza">
+                <div id="ziua1"></div>
+                <div id="ziua2"></div>
+                <div id="ziua3"></div>
+                <div id="ziua4"></div>
+                <div id="ziua5"></div>
+                <div id="ziua6"></div>
+            </div>
+        </div>
+    </body>
+
+</html>

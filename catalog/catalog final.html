@@ -1,0 +1,46 @@
+<!Doctype html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="catalog.css">
+		<script src="catalog.js"></script>
+	</head>
+	<body onload="deseneazaTabel()">
+		<div id="lista_elevi_wrapper">
+			<h2>Lista elevi</h2>
+			<form onsubmit="adauga(this,event)" class="input_form">
+				<label>Nume:</label>
+				<input name="nume" type="text">
+				<input type="submit" value="Adauga elev">
+			</form>
+			<div class="tabel_border">
+				<table class="adaugare spatiere">
+					<thead>
+						<button class="sortare" onclick="sortareAsc('medie', event)">Sorteaza ascendent notele</button>
+						<button class="sortare" onclick="sortareDesc('medie', event)">Sorteaza descendent notele</button>
+						<div class="tabel_gol">Nici un elev adaugat</div>
+					</thead>
+					<tbody class="tabel_elevi">
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div id="note_elev_wrapper">
+			<button onclick="invizibil()">Ascunde notele</button>
+			<h2>Note elev:<span id="nume_elev"></span></h2>
+			<form id="form_elev" class="input_form update" onsubmit="adaugaNota(this, event)">
+				<label>Nota:</label>
+				<input name="nota_elev" type="number">
+				<input type="submit" value="Adauga nota">
+			</form>
+			<div class="tabel_border update">
+				<table class="centrare">
+					<thead>
+						<button class="sortare" onclick="sortareAscNote(this, event)">Sorteaza ascendent notele</button>
+						<button class="sortare" onclick="sortareDescNote('nota_elev', event)">Sorteaza descendent notele</button>
+						<div class="catalog_gol">Nici o nota adaugata</div>
+					</thead>
+					<tbody class="catalog"></tbody>
+				</table>
+			</div>
+		</div>
+	</body>
+</html>

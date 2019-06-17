@@ -1,0 +1,80 @@
+body,html{
+    margin:0;
+    padding: 0;
+    background-color: lightgreen;	
+}
+#note_elev_wrapper{
+    float:right;
+    margin-top: 0px;
+    display :none;
+}   
+#lista_elevi_wrapper{
+    float :left;  
+}   
+#note_elev_wrapper.visible{
+    display: block;
+    background-color: lightblue;
+}
+.tabel_elevi {
+    display: none;
+}
+.tabel_elevi.visible{
+    display:block;
+}
+.tabel_gol.invisible{
+    display:none;
+}
+.catalog {
+    display: none;
+}
+.catalog.visible{
+    display:block;
+}
+.catalog_gol.invisible{
+    display:none;
+}
+.input_form{
+    border: 1px solid black;
+    padding-right:990px;
+    margin: 0 10px 10px 10px;
+}
+.input_form.update{
+    border: 1px solid black;
+    padding-right: 200px;
+    margin: 0 10px 10px 10px;
+}
+input[name=nota_elev], input[name=nume]{
+    width: 370px;
+}
+.tabel_border{
+    border: 1px solid black;
+
+    margin: 0 10px 0 10px;
+}
+.tabel_border.update{
+    border: 1px solid black;
+    margin: 0 10px 0 10px;
+}
+.sortare{
+    background-color: green;
+}
+.spatiere{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+.spatiere td{
+   padding-left: 300px;
+}
+.centrare_elevi{
+    margin-left: auto;
+    margin-right: auto;
+    width:100%;
+}
+.centrare_elevi td{
+    padding-left:150px;
+}
+.centrare{
+    margin-left: 50%;
+    margin-right: 50%;		
+}

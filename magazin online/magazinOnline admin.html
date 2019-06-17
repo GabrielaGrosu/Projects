@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="magazinOnline.css">
+    <link rel="stylesheet" type="text/css" href="magazinOnline admin.css">
+    <script src="magazinOnline admin.js"></script>
+  </head>
+  
+  <body onload="getLista(); getCos()">
+    <div id="header_style">
+      <p id="titlu">
+        <a href="magazinOnline.html" class="col-sm-6 col-md-3 col-lg-1">Kitchen stuff</a>
+      </p>
+      <span>
+        <button class="cos">
+          <img src="cos.svg" class="src_style" />
+          <a href="magazinOnline cart.html" class="col-sm-12 col-md-6 col-lg-3">Cos cumparaturi</a>
+        </button>
+      </span>
+    </div>
+    <div style="clear: both;"></div>
+    <div id="container_gestionare">
+      <div id="container2">
+        <h2 id="gestionare_produse">Gestionare produse</h2>
+        <button id="buton_adaugare" class="buton_continut" onclick="formAdaugare()">Adauga produs nou</button>
+      </div><br />
+      <div style="clear: both"></div>
+      <div>
+        <table id="continut">
+          <thead>
+            <tr>
+              <td>Imagine</td>
+              <td>Nume</td>
+              <td>Pret</td>
+              <td>Cantitate</td>
+              <td></td>
+            </tr>
+          </thead>
+          <tbody id="continut_body"></tbody>
+        </table>
+        <div id="loading_image">
+          <img src="loading.gif" id="loading" />
+        </div>
+      </div>
+      <div id="adaugare_produs">
+        <form onsubmit="adaugare(this,event)">
+            <div id="container_subtitlu">
+              <span id="container_adaugare">Adaugare produs</span>
+              <span id="container_editare">Editare produs </span>
+              <span id="nume_editare"> </span>
+              <input type="Submit" value="Add" id="buton_add">
+              <input type="Submit" value="Edit" id="buton_editare">
+              <input type="button" value="Cancel" id="buton_cancel" onclick="anulare();">
+            </div>
+            <div id="container_form">
+              <label class="editare_label">Nume:</label>
+              <input type="text" name="nume" id="nume_adaugare" class="input_editare">
+              <label class="editare_label">Imagine:</label>
+              <input type="text" name="imagine" id="imagine_adaugare" class="input_editare">
+              <label class="editare_label">Pret:</label>
+              <input type="text" name="pret" id="pret_adaugare" class="input_editare">
+              <label class="editare_label">Stoc:</label>
+              <input type="text" name="stoc" id="stoc_adaugare" class="input_editare">
+              <label class="editare_label">Descriere:</label>
+              <input type="text" name="detalii" id="detalii_adaugare" class="input_editare">
+            </div>
+        </form>
+        <div style="clear: both"></div>
+      </div>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,250 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: #bfc7c3;
+    background-image: url("fresh-snow.png");
+    font-family: 'Roboto', sans-serif;
+}
+
+#titlu {
+    display: inline;
+    color: #209124;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: 800;
+    letter-spacing: -3px;
+    line-height: 1;
+    text-shadow: #78b07a 3px 2px 0;
+    position: relative;
+}
+
+#titlu>* {
+    color: #209124;
+}
+
+#header_style {
+    margin: 20px auto 0 auto;
+    width: 80%;
+}
+
+.cos {
+    display: inline;
+    float: right;
+    padding: 5px 15px;
+    border-radius: 3px;
+}
+
+.src_style {
+    width: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.header_tabel {
+    font-weight: bold;
+}
+
+#continut {
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+
+}
+
+#continut.invisible {
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+#loading {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 10%;
+    box-sizing: border-box;
+}
+
+#container2 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+#container2.invisible {
+    display: none;
+}
+
+#adaugare_produs {
+    display: none;
+}
+
+#adaugare_produs.visible {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 5px;
+}
+
+#buton_adaugare {
+    float: right;
+    display: inline;
+    margin: 19.92px;
+}
+
+#gestionare_produse {
+    display: inline;
+    float: left;
+}
+
+#container_adaugare {
+    display: none;
+}
+
+#buton_add {
+    display: none;
+}
+
+#buton_editare {
+    display: none;
+}
+
+#container_editare {
+    display: none;
+}
+
+#container_adaugare.visible {
+    display: inline-block;
+    font-size: 16px;
+    order: 1;
+    margin: auto;
+}
+
+#container_editare.visible {
+    display: inline-block;
+    font-size: 16px;
+    order: 1;
+    margin: auto;
+}
+
+#buton_add.visible {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    order: 4;
+    margin: auto;
+}
+
+#buton_editare.visible {
+    display: inline-block;
+    padding: 3px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    order: 4;
+    margin: auto;
+}
+
+#nume_editare {
+    display: inline-block;
+    order: 2;
+    margin: auto;
+    flex: 2 0px;
+    padding-left: 5px;
+}
+
+#loading_image.invisible {
+    display: none;
+}
+
+#container_gestionare {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    margin: 20px auto 20px auto;
+    width: 60%;
+    box-shadow: inset 0 0 15px #dcefdd;
+    padding-left: 20px;
+}
+
+.cos {
+    display: inline-block;
+    border: 1.5px solid #209124;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cos:hover{
+    background-color: #509753;
+}
+
+.buton_continut {
+    margin-top: 10px;
+    padding: 3px 10px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+#buton_cancel {
+    padding: 3px;
+    border: 1px solid black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    border-radius: 5px;
+    order: 5;
+    margin: 0 5px 0 5px;
+}
+
+.input_editare {
+    box-shadow: inset 0 0 3px #000000;
+    border-radius: 5px;
+    float: right;
+    width: 80%;
+    margin: 6px 5px 0 0;
+    display: inline-block;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+
+}
+
+.editare_label {
+    float: left;
+    width: 15%;
+    margin-top: 5px;
+    vertical-align: baseline;
+    display: inline-block;
+    padding: 6px 6px 6px 0;
+    display: inline-block;
+}
+
+.container_form {
+    width: 100%;
+}
+
+#container_subtitlu {
+    display: flex;
+    align-content: space-between;
+}
+@media only screen and (max-width: 768px) {
+    #container_gestionare {
+    border: 1.5px solid white;
+    border-radius: 5px;
+    margin: 0 auto 0 auto;
+    width: 100%;
+    box-shadow: inset 0 0 15px #dcefdd;
+    padding: 0 3px 0 3px;
+    }     
+}

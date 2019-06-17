@@ -1,0 +1,133 @@
+     body,
+        html {
+            margin: 0;
+            padding: 0;
+            background-color: #bfc7c3;
+            background-image: url("fresh-snow.png");
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .item {
+            display: inline-block;
+            padding: 5px;
+            box-sizing: border-box;
+        }
+
+        .continut {
+            margin-left: auto;
+            margin-right: auto;
+            width: 80%;
+            font-family: 'Roboto', sans-serif;
+            box-sizing: border-box;
+        }
+
+        .pret {
+            font-weight: bold;
+            text-align: center;
+            display: inline-block;
+            float: left;
+            margin-top: 10px;
+        }
+
+        #loading {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 10%;
+        }
+
+        .spatiere {
+            border: 1.5px solid white;
+            border-radius: 5px 5px 0 0;
+            padding: 7px 7px 10px 7px;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        .imagine_produse {
+            border-radius: 5px 5px 0 0;
+        }
+
+        .src_style {
+            width: 20px;
+        }
+
+        #butoane_bara {
+            display: flex;
+            float: right;
+            padding: 5px 15px;
+            margin-left: 5px;
+            color: #209124;
+        }
+
+        .cos {
+            order: 1;
+            display: inline-block;
+            border: 1.5px solid #209124;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .cos:hover{
+            background-color: #509753;
+        }
+
+        .admin {
+            margin-left: 15px;
+            order: 2;
+            border: 1.5px solid #209124;
+            font-family: 'Roboto', sans-serif;
+            font-size: 18px;
+            border-radius: 5px;
+        }
+
+        .admin:hover{
+            background-color: #509753;
+        }
+        
+        #titlu {
+            display: inline;
+            color: #209124;
+            font-family: 'Open Sans', sans-serif;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 30px;
+            font-weight: 800;
+            letter-spacing: -3px;
+            line-height: 1;
+            text-shadow: #78b07a 3px 2px 0;
+            position: relative;
+            vertical-align: top;
+        }
+
+        #titlu>* {
+            color: #209124;
+        }
+
+        #header_style {
+            margin: 20px auto 20px auto;
+            width: 77%;
+        }
+
+        .detalii {
+            display: inline-block;
+            float: right;
+            margin-top: 10px;
+            padding: 3px 10px;
+            border: 1.5px solid #209124;
+            font-family: 'Roboto', sans-serif;
+            font-size: 16px;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        .src_title {
+            width: 100px;
+            height: 50px;
+        }
+     

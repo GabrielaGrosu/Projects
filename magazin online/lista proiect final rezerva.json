@@ -1,0 +1,75 @@
+{
+    "produse":
+    [{
+    "imagine": "tacamuri.jpg",
+    "nume": "Set tacamuri 16 piese",
+    "detalii": "Material: inox",
+    "stoc": 10,
+    "pret": 130
+},
+{
+    "imagine": "razatoare.jpg",
+    "nume": "Razatoare",
+    "detalii": "Material:inox",
+    "stoc":5,
+    "pret" :15
+},
+{
+    "imagine": "servetele.jpg",
+    "nume": "Suport pentru servetele",
+    "detalii": "Material: bambus",
+    "stoc":7,
+    "pret" :30
+},
+{
+    "imagine": "cleste.jpg",
+    "nume": "Cleste pentru bucatarie",
+    "detalii": "Material: lemn de fag",
+    "stoc":20,
+    "pret" :20
+},
+{
+    "imagine": "tocator.jpg",
+    "nume": "Cleste pentru carne",
+    "detalii": "Material: inox",
+    "stoc":20,
+    "pret" :30
+},
+{
+    "imagine": "perie.jpg",
+    "nume": "Perie pentru legume",
+    "detalii": "Material: plastic ABS, fire din nailon",
+    "stoc":10,
+    "pret" :11
+},
+{
+    "imagine": "spuma.jpg",
+    "nume": "Cana pentru spuma de lapte",
+    "detalii": "Material: sticla termorezistenta pyrex, inox",
+    "stoc":5,
+    "pret" :19
+},
+{
+    "imagine": "spatule.jpg",
+    "nume": "Set spatule",
+    "detalii": "Material: lemn de bambus",
+    "stoc":9,
+    "pret" :23
+},
+{
+    "imagine": "cana.jpg",
+    "nume": "Cana gradata 600 ml",
+    "detalii": "Material: inox",
+    "stoc":8,
+    "pret" :19
+},
+{
+    "imagine": "curatator.jpg",
+    "nume": "Curatator legume",
+    "detalii": "Material: inox",
+    "stoc":6,
+    "pret" :11
+}
+],
+    "cos":[]
+}

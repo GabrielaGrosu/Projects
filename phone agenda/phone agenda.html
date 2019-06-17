@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<head>
+  <link rel="stylesheet" type="text/css" href="phone agenda.css">
+  <script src="phone agenda.js"></script>
+  <title>Phone agenda</title>    
+</head>
+
+<body onload="getContacte();">
+    <h1>Agenda</h1>
+    <div id="container1">
+        <form id="formAdaugare" onsubmit="adaugare(this,event);">
+            Nume:
+            <input name="nume" type="text" />
+            Telefon:
+            <input name="telefon" type="text" id="telefon" /><br />
+            <input type="Submit" value="Adauga contact" id="adauga">
+        </form>
+    </div>
+    <div class="container2">
+        <table class="date">
+        </table>
+    </div>
+</body>
+
+</html>

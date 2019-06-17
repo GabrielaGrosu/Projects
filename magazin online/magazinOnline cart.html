@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="magazinOnline.css">
+		<link rel="stylesheet" type="text/css" href="magazinOnline cart.css">
+		<script  src="magazinOnline cart.js"></script>
+	</head>
+
+	<body onload="getLista(); getCos()">
+		<div id="header_style">
+			<h1 id="titlu">
+				<a href="magazinOnline.html" id="link_titlu">Kitchen stuff</a>
+			</h1>
+			<span>
+				<button class="cos">
+					<img src="cos.svg" class="src_style" />
+					<a href="magazinOnline cart.html">Cos cumparaturi</a>
+				</button>
+			</span>
+		</div>
+		<div style="clear: both"></div>
+		<div id="loading_gif">
+			<img src="loading.gif" id="loading" />
+		</div>
+		<div class="continut">
+			<div>
+				<table class="style_tabel">
+					<thead>
+						<tr class="header_tabel">
+							<td>Nume</td>
+							<td>Pret</td>
+							<td>Cantitate</td>
+							<td>Subtotal</td>
+							<td></td>
+						</tr>
+					</thead>
+					<tbody class="tbody_tabel"></tbody>
+				</table>
+				<div class="coloana_total">
+					<p>Produse: <span id="cosNou_length"></span></p>
+					<p>TVA: 0%</p>
+					<p>Transport: 0</p>
+					<p><strong>Total: <span class="suma"></span> lei</strong></p>
+					<button class="cos">Cumpara</button>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+	</body>
+
+</html>
